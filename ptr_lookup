@@ -1,5 +1,0 @@
-Pass a list of IP addresses that need to be resolved. Outputs a lists of the
-domains associated with the IP. Any address that does not resolve will be listed
-at the end of the output file.
-
-Replace the file paths to match your desired input/output.
