@@ -22,11 +22,11 @@ with open(r"C:\Users\useraccount\Desktop\suspiciousIP.txt", "r") as input:
             ptr_lookup.append(socket.gethostbyaddr(i)) 
         except socket.herror:
             error_log.append(f"Error, the IP address {i} did not resolve to a domain")
-        
+   
     with open(r"C:\Users\useraccount\Desktop\resolvedIP.txt", "w+") as output:
         for item in ptr_lookup:
             line = " ".join(str(x) for x in item)
             output.write(line + "\n")
         
-        for item in error_log:
-            output.write(str(error_log) + "\n")
+        for i in range(len(error_log)):
+            output.write(error_log[i] + "\n")
