@@ -1,0 +1,4 @@
+This script takes a list of in-addr-arpa addresses as input, strips the "in-addr-arpa",
+and then reverses the IP addresses, before saving them to a txt file.
+
+Change the input and output file paths to match your needs.
